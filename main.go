@@ -22,7 +22,7 @@ func main() {
 
 	err := router.SetTrustedProxies(nil)
 	if err != nil {
-		log.Fatalf("Ошибка при установке доверенных прокси: %v", err)
+		log.Fatalf("Fail to set the proxies: %v", err)
 	}
 
 	routes.AuthRoutes(router)
