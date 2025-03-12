@@ -26,26 +26,25 @@ This is an **Authentication Service** built using **Go (Gin)** and **MongoDB**. 
 ### 📂 Project Structure
 ```
 auth-service/
-│── cmd/
-│   ├── main.go
-│── internal/
-│   ├── handlers/
-│   │   ├── auth.go
-│   ├── models/
-│   │   ├── user.go
-│   ├── repository/
-│   │   ├── user_repository.go
-│   ├── services/
-│   │   ├── auth_service.go
-│── config/
-│   ├── config.go
-│── pkg/
+│── controllers/
+│   ├── controllUser.go
+│── database/
+│   ├── dbConnection.go
+├── helpers/
+│   ├── authHelper.go
+│   ├── tokenHelper.go
+├── middleware/
+│   ├── middleware.go
+├── models/
+│   ├── models.go
+│── routes/
+│   ├── auth.go
+│   ├── user.go
 │── .gitignore
+│── README.md
 │── go.mod
 │── go.sum
-│── README.md
-│── Dockerfile
-│── Makefile
+│── main.go
 ```
 
 ---
